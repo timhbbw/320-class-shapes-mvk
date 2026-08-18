@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = 'ch.bbw'
+version = '0.0.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation 'org.assertj:assertj-core:3.27.7'
+	testImplementation 'org.junit.jupiter:junit-jupiter:6.1.3'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
