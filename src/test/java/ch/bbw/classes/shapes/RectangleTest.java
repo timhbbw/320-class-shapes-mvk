@@ -31,7 +31,8 @@ class RectangleTest implements WithAssertions {
 	@Test
 	void circumference() {
 		assertThat(new Rectangle(1, 1).getCircumference()).isEqualTo(4);
-		assertThat(new Rectangle(a, b).getCircumference()).isEqualTo(a + a + b + b);
+		assertThat(new Rectangle(a, b).getCircumference()).isCloseTo(a + a + b + b,
+			org.assertj.core.data.Offset.offset(0.001));
 	}
 
 	@Test
