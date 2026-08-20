@@ -20,10 +20,9 @@ class CircleTest implements WithAssertions {
 	 */
 	@Test
 	void radius() {
-		// TODO: Entferne die folgenden Kommentare des Tests und lasse ihn erfolgreich laufen.
-		// double radius = 13.37;
-		// var circle = new Circle(radius);
-		// assertThat(circle.getRadius()).isEqualTo(radius);
+		double radius = 13.37;
+		var circle = new Circle(radius);
+		assertThat(circle.getRadius()).isEqualTo(radius);
 	}
 
 	/**
@@ -31,7 +30,9 @@ class CircleTest implements WithAssertions {
 	 */
 	@Test
 	void diameter() {
-		// TODO: Schreibe einen passenden Test und lasse ihn erfolgreich laufen.
+		double radius = 13.37;
+		var circle = new Circle(radius);
+		assertThat(circle.getDiameter()).isEqualTo(radius / 2);
 	}
 
 	/**
@@ -42,8 +43,7 @@ class CircleTest implements WithAssertions {
 	 */
 	@Test
 	void circumference() {
-		// TODO: Entferne die folgenden Kommentare des Tests und lasse ihn erfolgreich laufen.
-		// assertThat(new Circle(42).getCircumference()).isEqualTo(263.89378290154264);
+		assertThat(new Circle(42).getCircumference()).isEqualTo(263.89378290154264);
 	}
 
 	// TODO: Es gibt noch keinen Git commit? Das sollte man jetzt nachholen...
