@@ -11,4 +11,12 @@ public class Rectangle {
     public double getDiameter(){
         return Math.sqrt(lengthA*lengthA + lengthB*lengthB);
     }
+
+    public double getArea(){
+        return lengthA*lengthB;
+    }
+
+    public double getCircumference(){
+        return lengthA+lengthB+lengthB+lengthA;
+    }
 }
