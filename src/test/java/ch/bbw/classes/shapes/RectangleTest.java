@@ -15,13 +15,13 @@ class RectangleTest implements WithAssertions {
 	 */
 	// TODO: Entferne die folgenden Kommentare der Tests und lasse sie erfolgreich laufen.
 
-	/*
+
 	@Test
 	void diameter() {
 		assertThat(new Rectangle(1, 1).getDiameter()).isEqualTo(Math.sqrt(2));
 		assertThat(new Rectangle(a, b).getDiameter()).isEqualTo(Math.sqrt(a * a + b * b));
 	}
-
+/*
 	@Test
 	void area() {
 		assertThat(new Rectangle(1, 1).getArea()).isEqualTo(1);
@@ -46,8 +46,8 @@ class RectangleTest implements WithAssertions {
 		assertThat(new Rectangle(1, 1).hasLargerAreaThan(0.9)).isTrue();
 		assertThat(new Rectangle(1, 1).hasLargerAreaThan(1)).isFalse();
 	}
-	*/
 
+*/
 	@Test
 	void niceToString() {
 		// assertThat("my rectangle: " + new Rectangle(1, 2)).isEqualTo("my rectangle: Rectangle [a=1, b=2}");
