@@ -46,14 +46,14 @@ class CircleTest implements WithAssertions {
 		assertThat(new Circle(42).getCircumference()).isEqualTo(263.89378290154264);
 	}
 
-	// TODO: Es gibt noch keinen Git commit? Das sollte man jetzt nachholen...
-
 	/**
 	 * Erweitere die {@link Circle} Klasse um eine weitere Methode, welche die Kreisfläche berechnet.
 	 */
 	@Test
 	void area() {
-		// TODO: Schreibe einen passenden Test und lasse ihn erfolgreich laufen.
+		double radius = 13.37;
+		var circle = new Circle(radius);
+		assertThat(circle.getArea()).isEqualTo(561.5813638184852);
 	}
 
 	/**
@@ -62,10 +62,9 @@ class CircleTest implements WithAssertions {
 	 */
 	@Test
 	void comparingCircle() {
-		// TODO: Entferne die folgenden Kommentare des Tests und lasse ihn erfolgreich laufen.
-		// assertThat(new Circle(33).hasLargerAreaThan(new Circle(22))).isTrue();
-		// assertThat(new Circle(67).hasLargerAreaThan(new Circle(67))).isFalse();
-		// assertThat(new Circle(11).hasLargerAreaThan(new Circle(22))).isFalse();
+		assertThat(new Circle(33).hasLargerAreaThan(new Circle(22))).isTrue();
+		assertThat(new Circle(67).hasLargerAreaThan(new Circle(67))).isFalse();
+		assertThat(new Circle(11).hasLargerAreaThan(new Circle(22))).isFalse();
 	}
 
 	/**
@@ -77,11 +76,10 @@ class CircleTest implements WithAssertions {
 	 */
 	@Test
 	void comparingArea() {
-		// TODO: Entferne die folgenden Kommentare des Tests und lasse ihn erfolgreich laufen.
-		// assertThat(new Circle(33).hasLargerAreaThan(33d)).isTrue();
-		// assertThat(new Circle(1).hasLargerAreaThan(Math.PI)).isFalse();
-		// assertThat(new Circle(1).hasLargerAreaThan(Math.nextDown(Math.PI))).isTrue();
-		// assertThat(new Circle(0.5).hasLargerAreaThan(Math.PI)).isFalse();
+		assertThat(new Circle(33).hasLargerAreaThan(33d)).isTrue();
+		assertThat(new Circle(1).hasLargerAreaThan(Math.PI)).isFalse();
+		assertThat(new Circle(1).hasLargerAreaThan(Math.nextDown(Math.PI))).isTrue();
+		assertThat(new Circle(0.5).hasLargerAreaThan(Math.PI)).isFalse();
 	}
 
 	/**
@@ -91,9 +89,9 @@ class CircleTest implements WithAssertions {
 	@Test
 	void newWithDoubleArea() {
 		// TODO: Entferne die folgenden Kommentare des Tests und lasse ihn erfolgreich laufen.
-		// var aCircle = new Circle(33);
-		// var doubleTheSize = aCircle.newWithDoubleArea();
-		// assertThat(doubleTheSize.getArea()).isEqualTo(aCircle.getArea() * 2);
+		var aCircle = new Circle(33);
+		var doubleTheSize = aCircle.newWithDoubleArea();
+		assertThat(doubleTheSize.getArea()).isEqualTo(aCircle.getArea() * 2);
 	}
 
 	/**
