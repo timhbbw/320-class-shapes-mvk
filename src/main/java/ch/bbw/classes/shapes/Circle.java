@@ -43,4 +43,8 @@ public class Circle {
     public Circle newWithDoubleArea() {
         return new Circle(this.radius * Math.sqrt(2));
     }
+
+    public String toString() {
+        return "Circle{radius=" + radius + "}";
+    }
 }
