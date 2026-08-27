@@ -1,10 +1,10 @@
 package ch.bbw.classes.shapes;
 
-public class Brawler {
+public abstract class Brawler {
     final int baseMaxLife;
     private int life;
 
-    public Brawler(int baseMaxLife) {
+    protected Brawler(int baseMaxLife) {
         this.baseMaxLife = baseMaxLife;
         life = baseMaxLife;
     }
@@ -16,13 +16,20 @@ public class Brawler {
     public int getLife() {
         return life;
     }
+
+    public abstract int doAttack(Brawler traget);
 }
 
 class Edgar extends Brawler{
 
-    public Edgar(int baseMaxLife) {
-        super(baseMaxLife);
+    public Edgar() {
+        super(10000);
     }
 
 
+    @Override
+    public int doAttack(Brawler traget) {
+        traget.takeDamage(5000);
+        return 3000;
+    }
 }

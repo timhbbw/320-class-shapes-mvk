@@ -88,7 +88,6 @@ class CircleTest implements WithAssertions {
 	 */
 	@Test
 	void newWithDoubleArea() {
-		// TODO: Entferne die folgenden Kommentare des Tests und lasse ihn erfolgreich laufen.
 		var aCircle = new Circle(33);
 		var doubleTheSize = aCircle.newWithDoubleArea();
 		assertThat(doubleTheSize.getArea()).isEqualTo(aCircle.getArea() * 2);
