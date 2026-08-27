@@ -19,11 +19,11 @@ class ShapeTest implements WithAssertions {
 	 *  Beachte: Dies benötigt je eine weitere Methode.
 	 */
 	Shape aCircle() {
-		return null; // TODO: return ein Circle mit Radius 1
+		return new Circle(1);
 	}
 
 	Shape aRectangle() {
-		return null; // TODO: return ein Rectangle mit Seitenlängen 1 und 1: es sollen alle Tests grün werden.
+		return new Rectangle(1,1);
 	}
 
 	@Test

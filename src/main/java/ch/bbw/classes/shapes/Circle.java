@@ -1,6 +1,6 @@
 package ch.bbw.classes.shapes;
 
-public class Circle {
+public class Circle implements Shape {
 
     double radius = 0;
 
@@ -13,7 +13,7 @@ public class Circle {
     }
 
     public double getDiameter() {
-        return radius / 2;
+        return radius * 2;
     }
 
     public double getCircumference() {
@@ -22,6 +22,11 @@ public class Circle {
 
     public double getArea() {
         return Math.PI * Math.pow(radius, 2);
+    }
+
+    @Override
+    public int numberOfEdges() {
+        return 1;
     }
 
     public boolean hasLargerAreaThan(Circle circle) {

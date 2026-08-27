@@ -32,7 +32,7 @@ class CircleTest implements WithAssertions {
 	void diameter() {
 		double radius = 13.37;
 		var circle = new Circle(radius);
-		assertThat(circle.getDiameter()).isEqualTo(radius / 2);
+		assertThat(circle.getDiameter()).isEqualTo(radius * 2);
 	}
 
 	/**

@@ -1,6 +1,6 @@
 package ch.bbw.classes.shapes;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     public double lengthA = 0;
     public double lengthB = 0;
     public Rectangle(double a, double b){
@@ -14,6 +14,11 @@ public class Rectangle {
 
     public double getArea(){
         return lengthA*lengthB;
+    }
+
+    @Override
+    public int numberOfEdges() {
+        return 4;
     }
 
     public double getCircumference(){
