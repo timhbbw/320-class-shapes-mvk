@@ -47,7 +47,7 @@ class RectangleTest implements WithAssertions {
 
 	@Test
 	void niceToString() {
-		assertThat("my rectangle: " + new Rectangle(1, 2)).isEqualTo("my rectangle: Rectangle [a=1, b=2}");
+		assertThat("my rectangle: " + new Rectangle(1, 2)).isEqualTo("my rectangle: Rectangle [a=1, b=2]");
 	}
 
 }

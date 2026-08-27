@@ -37,6 +37,6 @@ public class Rectangle implements Shape {
     }
 
     public String toString() {
-        return "Rectangle [a=" + ((int) lengthA) + ", b=" + ((int) lengthB)+ "}";
+        return "Rectangle [a=" + ((int) lengthA) + ", b=" + ((int) lengthB)+ "]";
     }
 }

@@ -47,7 +47,7 @@ class ShapeTest implements WithAssertions {
 	void sortingStuff() {
 		var shapes = List.of(aCircle(), aRectangle());
 		var smallest = shapes.stream().min(Comparator.comparing(Shape::getDiameter)).orElseThrow();
-		assertThat(smallest.toString()).isEqualTo("Rectangle[a=1.0, b=1.0]");
+		assertThat(smallest.toString()).isEqualTo("Rectangle [a=1, b=1]");
 	}
 
 }
