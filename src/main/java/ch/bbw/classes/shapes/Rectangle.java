@@ -19,4 +19,19 @@ public class Rectangle {
     public double getCircumference(){
         return lengthA+lengthB+lengthB+lengthA;
     }
+
+    public boolean hasLargerAreaThan(Rectangle rectangle) {
+        if (getArea() > rectangle.lengthA*rectangle.lengthB){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean hasLargerAreaThan(double v) {
+        return getArea() > v;
+    }
+
+    public String toString() {
+        return "Rectangle [a=" + ((int) lengthA) + ", b=" + ((int) lengthB)+ "}";
+    }
 }

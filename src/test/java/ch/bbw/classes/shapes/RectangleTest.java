@@ -32,7 +32,7 @@ class RectangleTest implements WithAssertions {
 		assertThat(new Rectangle(a, b).getCircumference()).isCloseTo(a + a + b + b,
 				org.assertj.core.data.Offset.offset(0.001));
 	}
-/*
+
 	@Test
 	void comparingRectangle() {
 		assertThat(new Rectangle(1, 1).hasLargerAreaThan(new Rectangle(1, 0.5))).isTrue();
@@ -44,10 +44,10 @@ class RectangleTest implements WithAssertions {
 		assertThat(new Rectangle(1, 1).hasLargerAreaThan(0.9)).isTrue();
 		assertThat(new Rectangle(1, 1).hasLargerAreaThan(1)).isFalse();
 	}
-	*/
+
 	@Test
 	void niceToString() {
-		// assertThat("my rectangle: " + new Rectangle(1, 2)).isEqualTo("my rectangle: Rectangle [a=1, b=2}");
+		assertThat("my rectangle: " + new Rectangle(1, 2)).isEqualTo("my rectangle: Rectangle [a=1, b=2}");
 	}
 
 }

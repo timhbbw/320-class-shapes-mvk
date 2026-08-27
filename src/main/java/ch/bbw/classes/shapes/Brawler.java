@@ -26,7 +26,6 @@ class Edgar extends Brawler{
         super(10000);
     }
 
-
     @Override
     public int doAttack(Brawler traget) {
         traget.takeDamage(5000);
