@@ -9,11 +9,6 @@ class RectangleTest implements WithAssertions {
 
 	double b = Math.random();
 
-	/**
-	 * Erstelle eine neue {@code Rectangle} Klasse neben der {@link Circle} Klasse.
-	 * Entferne danach die Kommentare dieses Tests, implementiere entsprechende Methoden und lass die Tests laufen.
-	 */
-
 	@Test
 	void diameter() {
 		assertThat(new Rectangle(1, 1).getDiameter()).isEqualTo(Math.sqrt(2));
